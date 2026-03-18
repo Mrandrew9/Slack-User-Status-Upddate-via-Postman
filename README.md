@@ -74,3 +74,23 @@ Content-Type: application/json
 ```
 
 
+## 📁 Project Structure
+
+```
+Slack-User-Status-Update-via-Postman/
+│
+├── README.md
+├── LICENSE
+│
+├── docs/
+│   └── slack-status-update-guide.md
+│
+├── postman/
+│   └── collection.json
+│
+└── examples/
+    └── sample-request.json
+```
+
+
+
