@@ -20,3 +20,57 @@ Example Use Case
 Update a user’s Slack status to:
 
 “Jessica on maternity leave until Aug 1” 🌴
+
+
+## 🚀 Quick Start
+
+1. Create a Slack App
+   👉 https://api.slack.com/apps
+
+2. Add OAuth Scopes:
+
+   * User wirte, read, etc
+
+3. Install the app to your workspace
+
+4. Copy your **User OAuth Token (xoxp)**
+
+5. Open Postman and configure:
+
+   **Method:** POST
+   **URL:** https://slack.com/api/users.profile.set
+
+6. Add Headers:
+
+   * Authorization: Bearer xoxp-your-token
+   * Content-Type: application/json
+
+7. Use the request body below and click **Send**
+
+
+
+## 📡 API Request Example
+
+### Endpoint
+
+POST https://slack.com/api/users.profile.set
+
+### Headers
+
+Authorization: Bearer xoxp-your-token
+Content-Type: application/json
+
+### Body
+
+```json
+{
+  "user": "U12345678",
+  "profile": {
+    "status_text": "Jessica on maternity leave until Aug 1",
+    "status_emoji": ":palm_tree:",
+    "status_expiration": 0
+  }
+}
+```
+
+
