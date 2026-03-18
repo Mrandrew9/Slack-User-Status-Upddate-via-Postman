@@ -1,26 +1,28 @@
-# Slack-User-Status-Upddate-via-Postman
+# Slack User Status Update via Postman
+
 This repository provides a step-by-step guide and Postman collection for updating Slack user status profiles using the Slack API.
 
 It is designed for IT admins, support teams, and managers who need to update user statuses (e.g., maternity leave, PTO, sick leave) in a consistent and automated way.
 
-Key Features
+---
 
-🔐 Slack API setup with required scopes
+## 🚀 Key Features
 
-⚙️ Postman configuration for quick testing
+* 🔐 Slack API setup with required scopes
+* ⚙️ Postman configuration for quick testing
+* 🧪 Sample request payloads
+* 📘 Clear documentation and best practices
+* 🔑 Secure token handling guidance
 
-🧪 Sample request payloads
+---
 
-📘 Clear documentation and best practices
-
-🔑 Secure token handling guidance
-
-Example Use Case
+## 📌 Example Use Case
 
 Update a user’s Slack status to:
 
-“Jessica on maternity leave until Aug 1” 🌴
+> **“Jessica on maternity leave until Aug 1” 🌴**
 
+---
 
 ## 🚀 Quick Start
 
@@ -29,7 +31,7 @@ Update a user’s Slack status to:
 
 2. Add OAuth Scopes:
 
-   * User wirte, read, etc
+   * `users.profile:write`
 
 3. Install the app to your workspace
 
@@ -37,28 +39,34 @@ Update a user’s Slack status to:
 
 5. Open Postman and configure:
 
-   **Method:** POST
-   **URL:** https://slack.com/api/users.profile.set
+   * **Method:** POST
+   * **URL:** https://slack.com/api/users.profile.set
 
 6. Add Headers:
 
-   * Authorization: Bearer xoxp-your-token
-   * Content-Type: application/json
+   ```
+   Authorization: Bearer xoxp-your-token
+   Content-Type: application/json
+   ```
 
 7. Use the request body below and click **Send**
 
-
+---
 
 ## 📡 API Request Example
 
 ### Endpoint
 
+```
 POST https://slack.com/api/users.profile.set
+```
 
 ### Headers
 
+```
 Authorization: Bearer xoxp-your-token
 Content-Type: application/json
+```
 
 ### Body
 
@@ -73,6 +81,7 @@ Content-Type: application/json
 }
 ```
 
+---
 
 ## 📁 Project Structure
 
@@ -91,6 +100,3 @@ Slack-User-Status-Update-via-Postman/
 └── examples/
     └── sample-request.json
 ```
-
-
-
